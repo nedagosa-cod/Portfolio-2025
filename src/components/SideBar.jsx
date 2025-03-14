@@ -143,11 +143,15 @@ export default function ProfileSidebar() {
       <div className="relative z-10 px-6 pb-6">
         <button className="relative w-full mt-10 overflow-hidden group">
           <div className="absolute inset-0 transition-all duration-300 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 group-hover:scale-105"></div>
-          <div className="relative py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 text-white font-medium">
-            <FileText size={18} />
-            Download My CV
+          <a
+            href="/cv2025.pdf"
+            target="_blank"
+            className="relative py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 text-white font-medium "
+          >
+            <FileText size={18} fill="white" />
+            <p className="text-white">Download My CV</p>
             <div className="absolute right-0 w-12 h-full transition-opacity duration-300 opacity-0 bg-gradient-to-l from-white/20 to-transparent group-hover:opacity-100"></div>
-          </div>
+          </a>
         </button>
       </div>
     </div>

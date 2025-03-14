@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* Divider */}
-      <div className="h-px " />
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent" />
 
       {/* Skills Section */}
       <div className="relative z-10 p-8 ">
@@ -80,7 +80,8 @@ const Home = () => {
                 </h3>
               </div>
               <p className="text-gray-700 dark:text-gray-300">
-              4 years of study as a graphic designer with extensive knowledge of the Adobe Suite.
+                4 years of study as a graphic designer with extensive knowledge
+                of the Adobe Suite.
               </p>
             </div>
           </div>
