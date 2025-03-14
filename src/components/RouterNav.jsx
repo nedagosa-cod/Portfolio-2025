@@ -13,7 +13,7 @@ export default function NavigationSidebar({ viewMain }) {
   const [activeSection, setActiveSection] = useState("about");
 
   return (
-    <div className="sticky top-10 h-min w-[200px] bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
+    <div className="animate__animated animate__fadeIn sticky top-10 h-min w-[200px] bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
       {/* Gradient background elements */}
       <div className="absolute w-64 h-64 rounded-full -top-24 -right-24 bg-gradient-to-br from-purple-500/20 to-blue-500/20 blur-3xl dark:from-purple-900/20 dark:to-blue-900/20" />
       <div className="absolute w-64 h-64 rounded-full -bottom-32 -left-32 bg-gradient-to-tr from-pink-500/10 to-yellow-500/10 blur-3xl dark:from-pink-900/10 dark:to-yellow-900/10" />

@@ -1,21 +1,24 @@
-
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useState } from "react"
-
-
+import { StepBack } from "lucide-react";
+import { StepForward } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 export function ImageGallery({ images, alt }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1))
-  }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
-  }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-  if (images.length === 0) return null
+  if (images.length === 0) return null;
 
   return (
     <div className="relative overflow-hidden rounded-xl">
@@ -35,17 +38,22 @@ export function ImageGallery({ images, alt }) {
         <>
           <button
             onClick={goToPrevious}
-            className="absolute flex items-center justify-center w-10 h-10 text-white transition-colors -translate-y-1/2 rounded-full left-2 top-1/2 bg-black/30 hover:bg-black/50 backdrop-blur-sm"
+            className="absolute flex items-center justify-center w-10 h-10 text-white transition-colors -translate-y-1/2 rounded-full left-2 top-1/3 bg-black/30 hover:bg-black/50 backdrop-blur-sm"
             aria-label="Previous image"
           >
-            <ChevronLeft size={24} />
+            <div>
+              <StepBack />
+            </div>
           </button>
+
           <button
             onClick={goToNext}
-            className="absolute flex items-center justify-center w-10 h-10 text-white transition-colors -translate-y-1/2 rounded-full right-2 top-1/2 bg-black/30 hover:bg-black/50 backdrop-blur-sm"
+            className="absolute flex items-center justify-center w-10 h-10 text-white transition-colors -translate-y-1/2 rounded-full right-2 top-1/3 bg-black/30 hover:bg-black/50 backdrop-blur-sm"
             aria-label="Next image"
           >
-            <ChevronRight size={24} />
+            <div>
+              <StepForward />
+            </div>
           </button>
         </>
       )}
@@ -74,5 +82,5 @@ export function ImageGallery({ images, alt }) {
         </div>
       )}
     </div>
-  )
+  );
 }

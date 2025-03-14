@@ -37,7 +37,7 @@ export default function ProfileSidebar() {
   }, []);
 
   return (
-    <div className="sticky top-10 h-min w-[320px] bg-red-500 dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
+    <div className="animate__animated animate__fadeIn sticky top-10 h-min w-[320px] bg-red-500 dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
       {/* Gradient background elements */}
       <div className="absolute w-64 h-64 rounded-full -top-24 -right-24 bg-gradient-to-br from-purple-500/30 to-blue-500/30 blur-3xl dark:from-purple-900/20 dark:to-blue-900/20" />
       <div className="absolute w-64 h-64 rounded-full -bottom-32 -left-32 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 blur-3xl dark:from-pink-900/20 dark:to-yellow-900/20" />
@@ -77,16 +77,16 @@ export default function ProfileSidebar() {
         {/* Social Media Links */}
         <div className="relative z-10 flex gap-3 mt-4">
           <Link
-            href="www.linkedin.com/in/néstor-david-gómez-sanabria-385b8b211"
+            href="https://linkedin.com/in/néstor-david-gómez-sanabria-385b8b211"
             className="text-gray-500 transition-colors hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
-            aria-label="LinkedIn profile"
+            target="_blank"
           >
             <Linkedin size={20} />
           </Link>
           <Link
             href="https://github.com/nedagosa-cod"
             className="text-gray-500 transition-colors hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400"
-            aria-label="GitHub profile"
+            target="_blank"
           >
             <Github size={20} />
           </Link>

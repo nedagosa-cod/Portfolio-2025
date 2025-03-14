@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "animate.css";
 import "./App.css";
 import MainBody from "./components/MainBody";
 import NavigationSidebar from "./components/RouterNav";
@@ -22,9 +23,11 @@ function App() {
   const viewMain = (dataView) => {
     setView(views[dataView]);
   };
+
   return (
     <section className="relative flex justify-center w-full gap-4 mt-10">
       <ProfileSidebar />
+
       <MainBody>{view}</MainBody>
       <NavigationSidebar viewMain={viewMain} />
     </section>
