@@ -233,7 +233,7 @@ export default function ProjectsSection() {
     <>
       <div className="relative p-8">
         <div className="relative z-10">
-          <h2 className="inline-block mb-6 text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="inline-block mb-6 text-2xl font-bold text-[rgb(var(--dark))]">
             Projects
             <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
           </h2>
@@ -242,7 +242,7 @@ export default function ProjectsSection() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="overflow-hidden transition-all duration-300 bg-white border border-gray-200 shadow-sm cursor-pointer group dark:bg-gray-800 rounded-xl dark:border-gray-700 hover:shadow-md"
+                className="overflow-hidden transition-all duration-300  border  shadow-sm cursor-pointer group  rounded-xl bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))] hover:shadow-md"
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="relative h-48 overflow-hidden">
@@ -260,10 +260,10 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="p-5">
-                  <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="mb-2 text-xl font-semibold text-[rgb(var(--dark))]">
                     {project.title}
                   </h3>
-                  <p className="mb-4 text-gray-700 dark:text-gray-300">
+                  <p className="mb-4 text-[rgb(var(--dark))]">
                     {project.shortDescription}
                   </p>
 
@@ -311,7 +311,7 @@ export default function ProjectsSection() {
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     Timeline
                   </p>
-                  <p className="font-medium text-gray-900 dark:text-white">
+                  <p className="font-medium text-[rgb(var(--dark))]">
                     {selectedProject.timeline}
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function ProjectsSection() {
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     Team
                   </p>
-                  <p className="font-medium text-gray-900 dark:text-white">
+                  <p className="font-medium text-[rgb(var(--dark))]">
                     {selectedProject.team}
                   </p>
                 </div>
@@ -345,7 +345,7 @@ export default function ProjectsSection() {
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     My Role
                   </p>
-                  <p className="font-medium text-gray-900 dark:text-white">
+                  <p className="font-medium text-[rgb(var(--dark))]">
                     {selectedProject.role}
                   </p>
                 </div>
@@ -354,7 +354,7 @@ export default function ProjectsSection() {
 
             {/* Tags */}
             <div>
-              <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--dark))]">
                 Technologies
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -371,7 +371,7 @@ export default function ProjectsSection() {
 
             {/* Description */}
             <div>
-              <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--dark))]">
                 About This Project
               </h3>
               <div className="space-y-4 text-gray-700 whitespace-pre-line dark:text-gray-300">

@@ -37,14 +37,14 @@ export default function ProfileSidebar() {
   }, []);
 
   return (
-    <div className="animate__animated animate__fadeIn sticky top-10 h-min w-[320px] bg-red-500 dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
+    <div className="animate__animated animate__fadeIn sm:sticky top-10 h-min w-full sm:w-[320px] dark:bg-[rgb(var(--gr-from))]  rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
       {/* Gradient background elements */}
       <div className="absolute w-64 h-64 rounded-full -top-24 -right-24 bg-gradient-to-br from-purple-500/30 to-blue-500/30 blur-3xl dark:from-purple-900/20 dark:to-blue-900/20" />
       <div className="absolute w-64 h-64 rounded-full -bottom-32 -left-32 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 blur-3xl dark:from-pink-900/20 dark:to-yellow-900/20" />
 
       {/* Header with profile photo */}
       <div className="relative flex flex-col items-center p-8">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]" />
 
         <button
           onClick={toggleDarkMode}
@@ -67,10 +67,10 @@ export default function ProfileSidebar() {
           />
         </div>
 
-        <h1 className="relative z-10 text-2xl font-bold text-center text-gray-900 dark:text-white">
+        <h1 className="relative z-10 text-2xl font-bold text-center text-[rgb(var(--dark))]">
           Nestor Gomez
         </h1>
-        <p className="relative z-10 font-medium text-center text-gray-500 dark:text-gray-400">
+        <p className="relative z-10 font-medium text-center text-[rgb(var(--label))]">
           Frontend Developer
         </p>
 
@@ -98,7 +98,7 @@ export default function ProfileSidebar() {
 
       {/* Contact Information */}
       <div className="relative z-10 p-6 space-y-4 backdrop-blur-sm">
-        <h2 className="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">
+        <h2 className="mb-3 text-sm font-medium text-[rgb(var(--label))]">
           CONTACT INFORMATION
         </h2>
 
@@ -107,8 +107,8 @@ export default function ProfileSidebar() {
             <Phone className="text-blue-500 dark:text-blue-400" size={18} />
           </div>
           <div>
-            <p className="text-xs text-gray-500 dark:text-gray-400">Phone</p>
-            <p className="font-medium text-gray-900 dark:text-white">
+            <p className="text-xs text-[rgb(var(--label))]">Phone</p>
+            <p className="font-medium text-[rgb(var(--dark))]">
               +57 3007805666
             </p>
           </div>
@@ -119,8 +119,8 @@ export default function ProfileSidebar() {
             <Mail className="text-purple-500 dark:text-purple-400" size={18} />
           </div>
           <div>
-            <p className="text-xs text-gray-500 dark:text-gray-400">Email</p>
-            <p className="font-medium text-gray-900 dark:text-white">
+            <p className="text-xs text-[rgb(var(--label))]">Email</p>
+            <p className="font-medium text-[rgb(var(--dark))]">
               nestorcode4004@gmail.com
             </p>
           </div>
@@ -131,8 +131,8 @@ export default function ProfileSidebar() {
             <MapPin className="text-pink-500 dark:text-pink-400" size={18} />
           </div>
           <div>
-            <p className="text-xs text-gray-500 dark:text-gray-400">Location</p>
-            <p className="font-medium text-gray-900 dark:text-white">
+            <p className="text-xs text-[rgb(var(--label))]">Location</p>
+            <p className="font-medium text-[rgb(var(--dark))]">
               Colombia/Bucaramanga
             </p>
           </div>

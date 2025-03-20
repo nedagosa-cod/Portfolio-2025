@@ -4,15 +4,15 @@ const Home = () => {
     <>
       {/* About Me Section */}
       <div className="relative p-8">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))] " />
 
         <div className="relative z-10">
-          <h2 className="inline-block mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="inline-block mb-4 text-2xl font-bold text-[rgb(var(--dark))]">
             About Me
             <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
           </h2>
 
-          <div className="space-y-4 text-gray-700 dark:text-gray-300">
+          <div className="space-y-4 [rgb(var(--dark))]">
             <p>
               I started as a developer in early 2020, where I discovered a
               passion that continues to this day. I am constantly learning and
@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Skills Section */}
       <div className="relative z-10 p-8 ">
-        <h2 className="inline-block mb-6 text-2xl font-bold text-gray-900 dark:text-white">
+        <h2 className="inline-block mb-6 text-2xl font-bold text-[rgb(var(--dark))]">
           Skills
           <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
         </h2>
@@ -53,11 +53,11 @@ const Home = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-[rgb(var(dark))]">
                   Web Development
                 </h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-[rgb(var(dark))]">
                 4 years as a front-end software developer (React, Next.js,
                 MySQL, Tailwind).
               </p>
@@ -75,11 +75,11 @@ const Home = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-[rgb(var(dark))]">
                   Design
                 </h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-[rgb(var(dark))]">
                 4 years of study as a graphic designer with extensive knowledge
                 of the Adobe Suite.
               </p>
@@ -97,11 +97,11 @@ const Home = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-[rgb(var(dark))]">
                   English
                 </h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-[rgb(var(dark))]">
                 I have B1 level in English
               </p>
             </div>
@@ -118,11 +118,11 @@ const Home = () => {
                     size={24}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-[rgb(var(dark))]">
                   Photography
                 </h3>
               </div>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-[rgb(var(dark))]">
                 Photography is one of my favorite hobbies
               </p>
             </div>

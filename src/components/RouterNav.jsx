@@ -13,17 +13,17 @@ export default function NavigationSidebar({ viewMain }) {
   const [activeSection, setActiveSection] = useState("about");
 
   return (
-    <div className="animate__animated animate__fadeIn sticky top-10 h-min w-[200px] bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-100 dark:border-gray-800 transition-colors duration-200">
+    <div className="animate__animated animate__fadeIn sm:sticky top-10 h-min w-full sm:w-[200px] bg-[rgb(var(--gr-from))] rounded-xl shadow-lg overflow-hidden border border-gray- dark:border-gray-800 transition-colors duration-200">
       {/* Gradient background elements */}
       <div className="absolute w-64 h-64 rounded-full -top-24 -right-24 bg-gradient-to-br from-purple-500/20 to-blue-500/20 blur-3xl dark:from-purple-900/20 dark:to-blue-900/20" />
       <div className="absolute w-64 h-64 rounded-full -bottom-32 -left-32 bg-gradient-to-tr from-pink-500/10 to-yellow-500/10 blur-3xl dark:from-pink-900/10 dark:to-yellow-900/10" />
 
       {/* Navigation Header */}
       <div className="relative p-6">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))] " />
 
         <div className="relative z-10">
-          <h2 className="text-xl font-bold text-center text-gray-900 dark:text-white">
+          <h2 className="text-xl font-bold text-center text-[rgb(var(--dark))]">
             Navigation
           </h2>
           <div className="w-24 h-1 mx-auto mt-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
@@ -34,8 +34,8 @@ export default function NavigationSidebar({ viewMain }) {
       <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent" />
 
       {/* Navigation Items */}
-      <div className="relative z-10 flex-1 p-4 backdrop-blur-sm bg-white/80 dark:bg-gray-900/80">
-        <nav className="space-y-2">
+      <div className="relative z-10 flex-1 p-4 backdrop-blur-sm bg-[rgb(var(--gr-from))]">
+        <nav className="flex justify-center gap-2 space-y-2 sm:block">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeSection === item.id;
@@ -48,12 +48,12 @@ export default function NavigationSidebar({ viewMain }) {
                   setActiveSection(item.id);
                 }}
                 className={`
-                  w-full relative group overflow-hidden rounded-lg flex items-center gap-3 p-3 transition-all duration-300
+                  sm:w-full relative group overflow-hidden rounded-lg flex items-center gap-3 p-3 transition-all duration-300 h-full
                   ${
                     isActive
                       ? "text-white"
-                      : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }
+                      : "text-gray-700 dark:text-gray-300 hover:bg-[rgb(var(--gr-from))]"
+                  } 
                 `}
               >
                 {/* Active background gradient */}
@@ -88,7 +88,9 @@ export default function NavigationSidebar({ viewMain }) {
                 </div>
 
                 {/* Label */}
-                <span className="relative z-10 font-medium">{item.label}</span>
+                <span className="relative z-10 hidden font-medium sm:block">
+                  {item.label}
+                </span>
 
                 {/* Shine effect for active items */}
                 {isActive && (

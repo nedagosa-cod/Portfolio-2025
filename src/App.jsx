@@ -25,9 +25,8 @@ function App() {
   };
 
   return (
-    <section className="relative flex justify-center w-full gap-4 mt-10">
+    <section className="relative flex flex-col-reverse justify-center w-full gap-4 p-2 mt-10 xs:flex-col sm:flex-row">
       <ProfileSidebar />
-
       <MainBody>{view}</MainBody>
       <NavigationSidebar viewMain={viewMain} />
     </section>

@@ -63,16 +63,16 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <div className="p-8 relative">
-      <div className="absolute inset-0  z-0" />
+    <div className="relative p-8">
+      <div className="absolute inset-0 z-0" />
 
       <div className="relative z-10">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 inline-block">
+        <h2 className="inline-block mb-6 text-2xl font-bold text-[rgb(var(--dark))]">
           Skills & Expertise
-          <div className="h-1 w-full bg-gradient-to-r from-blue-600 to-purple-600 mt-1 rounded-full"></div>
+          <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
         </h2>
 
-        <div className="space-y-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-10 space-y-10 md:grid-cols-2">
           {skills.map((category, index) => {
             const Icon = category.icon;
             return (
@@ -86,7 +86,7 @@ export default function SkillsSection() {
                       size={20}
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-semibold text-[rgb(var(--dark))]">
                     {category.category}
                   </h3>
                 </div>
@@ -95,14 +95,14 @@ export default function SkillsSection() {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-gray-700 dark:text-gray-300 font-medium">
+                        <span className="font-medium text-[rgb(var(--dark))]">
                           {skill.name}
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 text-sm">
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                      <div className="w-full h-2 overflow-hidden bg-gray-200 rounded-full dark:bg-gray-700">
                         <div
                           className={`h-full bg-gradient-to-r from-${category.color}-500 to-${category.color}-600 rounded-full`}
                           style={{ width: `${skill.level}%` }}

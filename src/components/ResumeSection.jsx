@@ -6,7 +6,7 @@ export default function ResumeSection() {
       <div className="absolute inset-0 z-0 " />
 
       <div className="relative z-10 ">
-        <h2 className="inline-block mb-6 text-2xl font-bold text-gray-900 dark:text-white ">
+        <h2 className="inline-block mb-6 text-2xl font-bold text-[rgb(var(--dark))] ">
           Resume
           <div className="w-full h-1 mt-1 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
         </h2>
@@ -20,7 +20,7 @@ export default function ResumeSection() {
                 size={20}
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-xl font-semibold text-[rgb(var(--dark))]">
               Work Experience
             </h3>
           </div>
@@ -29,9 +29,9 @@ export default function ResumeSection() {
             {/* Job 1 */}
             <div className="relative">
               <div className="absolute -left-[29px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
-              <div className="p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-5 border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
                 <div className="flex flex-wrap justify-between gap-2 mb-2">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                  <h4 className="font-semibold text-[rgb(var(--dark))]">
                     Freelance Frontend Developer
                   </h4>
                   <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
@@ -41,7 +41,7 @@ export default function ResumeSection() {
                 <h5 className="mb-3 text-purple-600 dark:text-purple-400">
                   Freelance
                 </h5>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-[rgb(var(--dark))]">
                   I have created online stores with WordPress and Shopify, as
                   well as landing pages for product catalogs and digital
                   invitations.
@@ -52,9 +52,9 @@ export default function ResumeSection() {
             {/* Job 2 */}
             <div className="relative">
               <div className="absolute -left-[29px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
-              <div className="p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-5 border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
                 <div className="flex flex-wrap justify-between gap-2 mb-2">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                  <h4 className="font-semibold ttext-[rgb(var(--dark))]">
                     Junior Frontend Developer
                   </h4>
                   <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
@@ -64,7 +64,7 @@ export default function ResumeSection() {
                 <h5 className="mb-3 text-purple-600 dark:text-purple-400">
                   Atento Colombia.
                 </h5>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-[rgb(var(--dark))]">
                   Developed and maintained client websites and web applications,
                   focusing on performance optimization and cross-browser
                   compatibility.
@@ -75,9 +75,9 @@ export default function ResumeSection() {
             {/* Job 3 */}
             <div className="relative">
               <div className="absolute -left-[29px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600"></div>
-              <div className="p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-5  border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
                 <div className="flex flex-wrap justify-between gap-2 mb-2">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                  <h4 className="font-semibold text-[rgb(var(--dark))]">
                     Lead Frontend Developer
                   </h4>
                   <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
@@ -87,7 +87,7 @@ export default function ResumeSection() {
                 <h5 className="mb-3 text-purple-600 dark:text-purple-400">
                   Atento Colombia.
                 </h5>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-[rgb(var(--dark))]">
                   Development team leader, managing various types of web
                   software, simulators, and the metaverse, attracting clients,
                   and providing implementation and improvement proposals for
@@ -107,7 +107,7 @@ export default function ResumeSection() {
                 size={20}
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-xl font-semibold text-[rgb(var(--dark))]">
               Education
             </h3>
           </div>
@@ -116,9 +116,9 @@ export default function ResumeSection() {
             {/* Education 1 */}
             <div className="relative">
               <div className="absolute -left-[29px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-600"></div>
-              <div className="p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-5  border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
                 <div className="flex flex-wrap justify-between gap-2 mb-2">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                  <h4 className="font-semibold text-[rgb(var(--dark))]">
                     Systems Technician.
                   </h4>
                   <span className="text-sm font-medium text-purple-600 dark:text-purple-400">
@@ -126,7 +126,7 @@ export default function ResumeSection() {
                   </span>
                 </div>
                 <h5 className="mb-3 text-blue-600 dark:text-blue-400">SENA</h5>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-[rgb(var(--dark))]">
                   I studied a technical program in systems after finishing high
                   school, focusing on computer repair.
                 </p>
@@ -136,9 +136,9 @@ export default function ResumeSection() {
             {/* Education 2 */}
             <div className="relative">
               <div className="absolute -left-[29px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-600"></div>
-              <div className="p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+              <div className="p-5  border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
                 <div className="flex flex-wrap justify-between gap-2 mb-2">
-                  <h4 className="font-semibold text-gray-900 dark:text-white">
+                  <h4 className="font-semibold text-[rgb(var(--dark))]">
                     Business Administration.
                   </h4>
                   <span className="text-sm font-medium text-purple-600 dark:text-purple-400">
@@ -148,7 +148,7 @@ export default function ResumeSection() {
                 <h5 className="mb-3 text-blue-600 dark:text-blue-400">
                   Areandina
                 </h5>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-[rgb(var(--dark))]">
                   I studied Business Management Technology at SENA and later
                   validated my studies to complete a Bachelor's degree in
                   Business Administration.
@@ -164,14 +164,14 @@ export default function ResumeSection() {
             <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-pink-100 to-pink-50 dark:from-pink-900/50 dark:to-pink-800/50">
               <Award className="text-pink-600 dark:text-pink-400" size={20} />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-xl font-semibold text-[rgb(var(--dark))]">
               Certifications
             </h3>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <h4 className="font-semibold text-gray-900 dark:text-white">
+            <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
+              <h4 className="font-semibold text-[rgb(var(--dark))]">
                 Frontend Developer
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -179,8 +179,8 @@ export default function ResumeSection() {
               </p>
             </div>
 
-            <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <h4 className="font-semibold text-gray-900 dark:text-white">
+            <div className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm bg-gradient-to-br from-[rgb(var(--gr-from))] to-[rgb(var(--gr-to))]">
+              <h4 className="font-semibold text-[rgb(var(--dark))]">
                 Definitive Javascript
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400">
